@@ -63,7 +63,44 @@ namespace UrunYonetim6584.WinFormUI
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                MessageBox.Show("Kategori Adı Giriniz!");
+                return;
+            }
+            var id = Convert.ToInt32(dgvKategoriler.CurrentRow.Cells[0].Value); //
+            var kategori = new Category()
+            {
+                Id = id, //
+                CreateDate = DateTime.Now,
+                Description = txtDescription.Text,
+                IsActive = cbIsActive.Checked,
+                Name = txtName.Text
+            };
+            manager.Update(kategori); //
+            var sonuc = manager.Save();
+            if (sonuc > 0)
+            {
+                dgvKategoriler.DataSource = manager.GetCategories();
+                txtName.Text = string.Empty;
+                txtDescription.Text = string.Empty;
+                MessageBox.Show("Kayıt Başarılı!");
+            }
+        }
 
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            var id = Convert.ToInt32(dgvKategoriler.CurrentRow.Cells[0].Value);
+            var kategori = manager.GetCategory(id);
+            manager.Delete(kategori);
+            var sonuc = manager.Save();
+            if (sonuc > 0)
+            {
+                dgvKategoriler.DataSource = manager.GetCategories();
+                txtName.Text = string.Empty;
+                txtDescription.Text = string.Empty;
+                MessageBox.Show("Kayıt Silme Başarılı!");
+            }
         }
     }
 }

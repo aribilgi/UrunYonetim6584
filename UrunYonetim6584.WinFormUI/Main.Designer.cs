@@ -57,6 +57,7 @@
             this.ürünYönetimiToolStripMenuItem.Name = "ürünYönetimiToolStripMenuItem";
             this.ürünYönetimiToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.ürünYönetimiToolStripMenuItem.Text = "Ürün Yönetimi";
+            this.ürünYönetimiToolStripMenuItem.Click += new System.EventHandler(this.ürünYönetimiToolStripMenuItem_Click);
             // 
             // Main
             // 

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Xml.Linq;
 
 namespace UrunYonetim6584.Entities
 {
