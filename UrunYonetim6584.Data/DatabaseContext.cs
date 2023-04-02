@@ -12,5 +12,12 @@ namespace UrunYonetim6584.Data
         {
             Database.SetInitializer(new DbInitializer()); // DbInitializer classımızı bu şekilde kurucu metotta çağırıyoruz çalışması için
         }
+        // model değişikliği durumlarında veritabanını silme gibi sorunlar yaşamamak için migration sistemi kullanılır!
+        // Migration kullanmak için Tools menüsünden Nuget package manager > package manager console menüsüne tıklayıp komut çalıştırma alanını aşağıya getiriyoruz.
+        // Bu alanda default project kısmından Data proje katmanını seçiyoruz
+        // Komut yazma alanına enable-migrations yazıp enter a basıyoruz
+        // Migration sistemi aktif olduktan sonra artık db yi silmemize gerek yok
+        // update-database komutunu yazıp enter diyerek güncellemeleri db ye yansıtabiliriz
+        // köklü bir değişiklik yaptığımızda ise add-migration migrationismi şeklinde komut yazıp enter deyip tekrar update-database komutuyla daha büyük değişiklikleri de db ye yansıtabiliriz.
     }
 }

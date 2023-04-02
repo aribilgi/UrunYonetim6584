@@ -53,6 +53,11 @@
   <ItemGroup>
     <Compile Include="DatabaseContext.cs" />
     <Compile Include="DbInitializer.cs" />
+    <Compile Include="Migrations\202304020711035_InitialCreate.cs" />
+    <Compile Include="Migrations\202304020711035_InitialCreate.designer.cs">
+      <DependentUpon>202304020711035_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +69,11 @@
       <Project>{9D759A0A-38C7-4BE3-B19C-8878835CBFB4}</Project>
       <Name>UrunYonetim6584.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202304020711035_InitialCreate.resx">
+      <DependentUpon>202304020711035_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
