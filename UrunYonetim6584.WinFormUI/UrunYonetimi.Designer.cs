@@ -31,22 +31,22 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dgvUrunler = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSil = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
+            this.cmbKategoriler = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbIsActive = new System.Windows.Forms.CheckBox();
+            this.txtBrand = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.RichTextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtDescription = new System.Windows.Forms.RichTextBox();
-            this.txtBrand = new System.Windows.Forms.TextBox();
-            this.cbIsActive = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtStock = new System.Windows.Forms.TextBox();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cmbKategoriler = new System.Windows.Forms.ComboBox();
-            this.btnEkle = new System.Windows.Forms.Button();
-            this.btnGuncelle = new System.Windows.Forms.Button();
-            this.btnSil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -93,6 +93,117 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ürün Bilgileri";
             // 
+            // btnSil
+            // 
+            this.btnSil.Location = new System.Drawing.Point(358, 90);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(75, 23);
+            this.btnSil.TabIndex = 18;
+            this.btnSil.Text = "Sil";
+            this.btnSil.UseVisualStyleBackColor = true;
+            // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Location = new System.Drawing.Point(277, 90);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(75, 23);
+            this.btnGuncelle.TabIndex = 17;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            // 
+            // btnEkle
+            // 
+            this.btnEkle.Location = new System.Drawing.Point(196, 90);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(75, 23);
+            this.btnEkle.TabIndex = 16;
+            this.btnEkle.Text = "Ekle";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
+            // 
+            // cmbKategoriler
+            // 
+            this.cmbKategoriler.DisplayMember = "Name";
+            this.cmbKategoriler.FormattingEnabled = true;
+            this.cmbKategoriler.Location = new System.Drawing.Point(299, 50);
+            this.cmbKategoriler.Name = "cmbKategoriler";
+            this.cmbKategoriler.Size = new System.Drawing.Size(100, 21);
+            this.cmbKategoriler.TabIndex = 15;
+            this.cmbKategoriler.ValueMember = "Id";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(225, 53);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Kategori";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(242, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Fiyat";
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(299, 24);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(100, 20);
+            this.txtPrice.TabIndex = 12;
+            // 
+            // txtStock
+            // 
+            this.txtStock.Location = new System.Drawing.Point(76, 76);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(100, 20);
+            this.txtStock.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 79);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Stok";
+            // 
+            // cbIsActive
+            // 
+            this.cbIsActive.AutoSize = true;
+            this.cbIsActive.Location = new System.Drawing.Point(492, 78);
+            this.cbIsActive.Name = "cbIsActive";
+            this.cbIsActive.Size = new System.Drawing.Size(47, 17);
+            this.cbIsActive.TabIndex = 9;
+            this.cbIsActive.Text = "Aktif";
+            this.cbIsActive.UseVisualStyleBackColor = true;
+            // 
+            // txtBrand
+            // 
+            this.txtBrand.Location = new System.Drawing.Point(76, 50);
+            this.txtBrand.Name = "txtBrand";
+            this.txtBrand.Size = new System.Drawing.Size(100, 20);
+            this.txtBrand.TabIndex = 8;
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(578, 16);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(178, 80);
+            this.txtDescription.TabIndex = 7;
+            this.txtDescription.Text = "";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(76, 24);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 6;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -119,115 +230,6 @@
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Marka";
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(76, 24);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 6;
-            // 
-            // txtDescription
-            // 
-            this.txtDescription.Location = new System.Drawing.Point(578, 16);
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(178, 80);
-            this.txtDescription.TabIndex = 7;
-            this.txtDescription.Text = "";
-            // 
-            // txtBrand
-            // 
-            this.txtBrand.Location = new System.Drawing.Point(76, 50);
-            this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(100, 20);
-            this.txtBrand.TabIndex = 8;
-            // 
-            // cbIsActive
-            // 
-            this.cbIsActive.AutoSize = true;
-            this.cbIsActive.Location = new System.Drawing.Point(492, 78);
-            this.cbIsActive.Name = "cbIsActive";
-            this.cbIsActive.Size = new System.Drawing.Size(47, 17);
-            this.cbIsActive.TabIndex = 9;
-            this.cbIsActive.Text = "Aktif";
-            this.cbIsActive.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Stok";
-            // 
-            // txtStock
-            // 
-            this.txtStock.Location = new System.Drawing.Point(76, 76);
-            this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(100, 20);
-            this.txtStock.TabIndex = 11;
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Location = new System.Drawing.Point(299, 24);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(100, 20);
-            this.txtPrice.TabIndex = 12;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(242, 27);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Fiyat";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(225, 53);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Kategori";
-            // 
-            // cmbKategoriler
-            // 
-            this.cmbKategoriler.FormattingEnabled = true;
-            this.cmbKategoriler.Location = new System.Drawing.Point(299, 50);
-            this.cmbKategoriler.Name = "cmbKategoriler";
-            this.cmbKategoriler.Size = new System.Drawing.Size(100, 21);
-            this.cmbKategoriler.TabIndex = 15;
-            // 
-            // btnEkle
-            // 
-            this.btnEkle.Location = new System.Drawing.Point(196, 90);
-            this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(75, 23);
-            this.btnEkle.TabIndex = 16;
-            this.btnEkle.Text = "Ekle";
-            this.btnEkle.UseVisualStyleBackColor = true;
-            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
-            // 
-            // btnGuncelle
-            // 
-            this.btnGuncelle.Location = new System.Drawing.Point(277, 90);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(75, 23);
-            this.btnGuncelle.TabIndex = 17;
-            this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
-            // 
-            // btnSil
-            // 
-            this.btnSil.Location = new System.Drawing.Point(358, 90);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(75, 23);
-            this.btnSil.TabIndex = 18;
-            this.btnSil.Text = "Sil";
-            this.btnSil.UseVisualStyleBackColor = true;
             // 
             // UrunYonetimi
             // 

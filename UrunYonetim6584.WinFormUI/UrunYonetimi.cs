@@ -12,11 +12,16 @@ namespace UrunYonetim6584.WinFormUI
             InitializeComponent();
         }
         ProductManager manager = new ProductManager(); // 1. yöntem ProductManager kullanarak
-        Repository<Product> repository = new Repository<Product>(); // 2. yöntem Repository e Product classını yollayarak
+        Repository<Category> repository = new Repository<Category>(); // 2. yöntem Repository e Category classını yollayarak
         private void UrunYonetimi_Load(object sender, EventArgs e)
         {
-            //dgvUrunler.DataSource = manager.GetAll(); // dgvUrunler i 1. yöntemle doldur
-            dgvUrunler.DataSource = repository.GetAll(); // 2. yöntemle doldur
+            DataLoad();
+        }
+
+        void DataLoad()
+        {
+            dgvUrunler.DataSource = manager.GetAll(); // dgvUrunler i 1. yöntemle doldur
+            cmbKategoriler.DataSource = repository.GetAll(); // 2. yöntemle kategorileri doldur
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
@@ -37,6 +42,21 @@ namespace UrunYonetim6584.WinFormUI
                 CreateDate = DateTime.Now,
                 CategoryId = Convert.ToInt32(cmbKategoriler.SelectedValue)
             };
+            manager.Add(urun);
+            try
+            {
+                int sonuc = manager.Save();
+                if (sonuc > 0)
+                {
+                    DataLoad();
+                    MessageBox.Show("Kayıt Başarılı!");
+                }
+            }
+            catch (Exception hata)
+            {
+                MessageBox.Show("Hata Oluştu!" + hata.Message);
+            }
+            
         }
     }
 }
