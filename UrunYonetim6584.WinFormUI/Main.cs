@@ -28,5 +28,11 @@ namespace UrunYonetim6584.WinFormUI
             UrunYonetimi urunYonetimi = new UrunYonetimi();
             urunYonetimi.ShowDialog();
         }
+
+        private void kullanıcıYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KullaniciYonetimi kullaniciYonetimi = new KullaniciYonetimi();
+            kullaniciYonetimi.ShowDialog();
+        }
     }
 }
