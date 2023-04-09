@@ -1,11 +1,10 @@
-﻿namespace UrunYonetim6584.Data.Migrations
-{
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
+﻿using System;
+using System.Data.Entity.Migrations;
+using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<UrunYonetim6584.Data.DatabaseContext>
+namespace UrunYonetim6584.Data.Migrations
+{
+    internal sealed class Configuration : DbMigrationsConfiguration<DatabaseContext>
     {
         public Configuration()
         {
@@ -14,7 +13,7 @@
             ContextKey = "UrunYonetim6584.Data.DatabaseContext";
         }
 
-        protected override void Seed(UrunYonetim6584.Data.DatabaseContext context)
+        protected override void Seed(DatabaseContext context)
         {
             //  This method will be called after migrating to the latest version.
             // seed metodu veritabanı oluştuktan sonra çalışır ve burada tablolara başlangıç kayıtları atabiliriz.
