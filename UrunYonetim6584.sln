@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunYonetim6584.Data", "Uru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunYonetim6584.BL", "UrunYonetim6584.BL\UrunYonetim6584.BL.csproj", "{00FE5A48-28E8-4D4C-BF00-CE0DCB428CDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunYonetim.WebFormUI", "UrunYonetim.WebFormUI\UrunYonetim.WebFormUI.csproj", "{8138B390-C1B4-48AC-ACBC-EF5ABA7C2AC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{00FE5A48-28E8-4D4C-BF00-CE0DCB428CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00FE5A48-28E8-4D4C-BF00-CE0DCB428CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00FE5A48-28E8-4D4C-BF00-CE0DCB428CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8138B390-C1B4-48AC-ACBC-EF5ABA7C2AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8138B390-C1B4-48AC-ACBC-EF5ABA7C2AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8138B390-C1B4-48AC-ACBC-EF5ABA7C2AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8138B390-C1B4-48AC-ACBC-EF5ABA7C2AC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
