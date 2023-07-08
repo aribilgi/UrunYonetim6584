@@ -53,9 +53,9 @@
   <ItemGroup>
     <Compile Include="DatabaseContext.cs" />
     <Compile Include="DbInitializer.cs" />
-    <Compile Include="Migrations\202304020711035_InitialCreate.cs" />
-    <Compile Include="Migrations\202304020711035_InitialCreate.designer.cs">
-      <DependentUpon>202304020711035_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202307081027003_ContactClassiEklendi.cs" />
+    <Compile Include="Migrations\202307081027003_ContactClassiEklendi.designer.cs">
+      <DependentUpon>202307081027003_ContactClassiEklendi.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,8 +71,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202304020711035_InitialCreate.resx">
-      <DependentUpon>202304020711035_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202307081027003_ContactClassiEklendi.resx">
+      <DependentUpon>202307081027003_ContactClassiEklendi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

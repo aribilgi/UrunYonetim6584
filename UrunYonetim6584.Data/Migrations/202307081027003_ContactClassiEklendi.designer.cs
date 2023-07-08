@@ -7,18 +7,18 @@ namespace UrunYonetim6584.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class ContactClassiEklendi : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ContactClassiEklendi));
         
         string IMigrationMetadata.Id
         {
-            get { return "202304020711035_InitialCreate"; }
+            get { return "202307081027003_ContactClassiEklendi"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return null; }
+            get { return Resources.GetString("Source"); }
         }
         
         string IMigrationMetadata.Target
