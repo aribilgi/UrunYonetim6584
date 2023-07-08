@@ -15,6 +15,8 @@ namespace UrunYonetim6584.Entities
         public string Brand { get; set; }
         [DisplayName("Durum")]
         public bool IsActive { get; set; }
+        [DisplayName("Anasayfa")]
+        public bool IsHome { get; set; }
         [DisplayName("Stok")]
         public int Stock { get; set; }
         [DisplayName("Ürün Fiyatı")]
@@ -23,10 +25,11 @@ namespace UrunYonetim6584.Entities
         public string Image { get; set; }
         [StringLength(100), DisplayName("Resim 2")]
         public string Image2 { get; set; }
-        [DisplayName("Eklenme Tarihi")]
-        public DateTime CreateDate { get; set; }
+        [DisplayName("Eklenme Tarihi"), ScaffoldColumn(false)]
+        public DateTime CreateDate { get; set; } = DateTime.Now;
+        [DisplayName("Kategori")]
         public int CategoryId { get; set; } // entityframework bu ilişkiye bakarak CategoryId property sini foreignkey olrak işaretleyecek
-        [ScaffoldColumn(false)]
+        [DisplayName("Kategori"), ScaffoldColumn(false)]
         public virtual Category Category { get; set; } // Product ile Category sınıfı arasında 1 e 1 ilişki kurduk. Yani her ürünün 1 kategorisi olacak
     }
 }
