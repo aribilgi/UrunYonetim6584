@@ -1,0 +1,13 @@
+﻿@model Category
+@{
+    ViewBag.Title = Model.Name;
+}
+
+<div class="row text-center mt-5">
+    <h2 class="display-2 pb-3">@Model.Name Ürünleri</h2>
+    <!-- /.col-lg-4 -->
+    @foreach (var item in Model.Products)
+    {
+        @Html.Partial("ProductView", item)
+    }
+</div>

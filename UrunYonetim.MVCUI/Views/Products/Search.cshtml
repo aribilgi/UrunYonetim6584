@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewBag.Title = "Ürünlerimiz";
+}
+
+<div class="row text-center mt-5">
+    <h2 class="display-2 pb-3">Ürünlerimiz</h2>
+    <!-- /.col-lg-4 -->
+    @foreach (var item in Model)
+    {
+        @Html.Partial("ProductView", item)
+    }
+</div>

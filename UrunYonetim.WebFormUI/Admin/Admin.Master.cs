@@ -13,5 +13,11 @@ namespace UrunYonetim.WebFormUI.Admin
         {
 
         }
+
+        protected void lbLogout_Click(object sender, EventArgs e)
+        {
+            System.Web.Security.FormsAuthentication.SignOut(); // oturumu kapat
+            Response.Redirect("/Admin/Login.aspx"); // kullanıcıyı tekrar girişe yönlendir
+        }
     }
 }
